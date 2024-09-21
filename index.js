@@ -174,9 +174,9 @@ function PassOrder(order) {
 //Endpoint 1: Get the stocks sorted by pricing
 function sortStocksByPrice(ele1, ele2) {
   if (PassOrder === 'low-to-high') {
-    ele1.price - ele2.price;
+    return ele1.price - ele2.price;
   } else {
-    ele2.price - ele1.price;
+    return ele2.price - ele1.price;
   }
 }
 app.get('/stocks/sort/pricing', (req, res) => {
@@ -190,9 +190,9 @@ app.get('/stocks/sort/pricing', (req, res) => {
 //Endpoint 2: Get the stocks sorted based on their Growth.
 function SortStocksByGrowth(ele1, ele2) {
   if (PassOrder === 'low-to-high') {
-    ele1.growth - ele2.growth;
+    return ele1.growth - ele2.growth;
   } else {
-    ele2.growth - ele1.growth;
+    return ele2.growth - ele1.growth;
   }
 }
 app.get('/stocks/sort/growth', (req, res) => {
