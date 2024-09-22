@@ -6,9 +6,6 @@ const port = 3010;
 let cors=require("cors");
 app.use(cors());
 
-let cors=require("cors");
-app.use(cors());
-
 let stocks = [
     { id: 1, name: "reliance industries", price: 2500, growth: 3.5, industry: "finance", exchange: "nse", },
     { id: 2, name: "hdfc bank", price: 1800, growth: 4.2, industry: "finance", exchange: "bse", },
